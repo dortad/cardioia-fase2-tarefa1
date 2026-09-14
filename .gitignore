@@ -1,0 +1,25 @@
+# Contexto interno de desenvolvimento - NAO publicar
+CLAUDE.md
+HISTORICO.md
+_interno/
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Windows / OneDrive
+desktop.ini
+Thumbs.db
+
+# Artefatos de trabalho - NAO publicar
+*.zip
+*.jpeg
+
+# Credenciais e ambientes locais
+.env
+.env.*
+!.env.example
+.venv/
+venv/
