@@ -6,16 +6,13 @@
 
 <br>
 
-# CardioIA — Fase 1: Batimentos de Dados
+# CardioIA — Fase 2: Batimentos de Dados
 
 ## Grupo AI4Success - Turma 2TIAOR
 
 ## 👨‍🎓 Integrantes:
 - Durval de Oliveira Dorta Junior - RM567007
-- Murilo Ferreira Borges - RM567738
-- Guilherme Cury - RM564011
 - Guilherme da Nobrega Gontijo - RM562211
-- Estevao Ferreira Santos - RM567522
 
 ## 👩‍🏫 Professores:
 ### Tutor(a)
