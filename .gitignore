@@ -1,6 +1,12 @@
 # Contexto interno de desenvolvimento - NAO publicar
 CLAUDE.md
 HISTORICO.md
+Enunciado.md
+execucao.md
+FASE2_CHECKLIST.md
+image-1.png
+image.png
+PROGRESSO_FASE2.md
 _interno/
 .claude/
 
@@ -24,9 +30,3 @@ Thumbs.db
 .venv/
 venv/
 Apostilas/*
-Enunciado.md
-execucao.md
-FASE2_CHECKLIST.md
-image-1.png
-image.png
-PROGRESSO_FASE2.md
