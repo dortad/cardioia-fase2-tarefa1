@@ -1,13 +1,31 @@
 Sintoma 1,Sintoma 2,Doença Associada
- dor no peito, aperto no tórax, Infarto
- dor no peito, falta de ar, Angina
- cansaço constante, fadiga, Insuficiência Cardíaca
- falta de ar, dificuldade para respirar, Angina
- inchaço nas pernas, edema, Insuficiência Cardíaca
- palpitação, coração acelerado, Arritmia
- tontura, desmaio, Arritmia
- pressão no tórax, suor frio, Infarto
- fadiga extrema, dificuldade para dormir deitado, Insuficiência Cardíaca
- aperto no peito, enjoo, Infarto
- dor no braço esquerdo, desconforto no peito, Infarto
- palpitação, cansaço, Arritmia
+dor no peito,dor torácica,Infarto
+desconforto no peito,desconforto torácico,Infarto
+aperto no peito,aperto no tórax,Infarto
+pressão no peito,pressão no tórax,Infarto
+dor no braço esquerdo,dor no braço do lado esquerdo,Infarto
+suor frio,sudorese fria,Infarto
+falta de ar,dificuldade para respirar,Infarto
+enjoo,náusea,Infarto
+dor no peito,dor torácica,Angina
+desconforto no peito,desconforto torácico,Angina
+aperto no peito,aperto no tórax,Angina
+pressão no peito,pressão no tórax,Angina
+falta de ar,dificuldade para respirar,Angina
+enjoo,náusea,Angina
+cansaço extremo,fadiga extrema,Angina
+cansaço constante,fadiga,Insuficiência Cardíaca
+cansaço extremo,fadiga extrema,Insuficiência Cardíaca
+falta de ar,dificuldade para respirar,Insuficiência Cardíaca
+inchaço nas pernas,pernas inchadas,Insuficiência Cardíaca
+dificuldade para dormir deitado,não consigo dormir deitado,Insuficiência Cardíaca
+enjoo,náusea,Insuficiência Cardíaca
+palpitação,palpitações,Arritmia
+coração acelerado,coração dispara,Arritmia
+batimentos irregulares,coração batendo irregularmente,Arritmia
+tontura,sensação de tontura,Arritmia
+desmaio,desmaiei,Arritmia
+cansaço,fadiga,Arritmia
+dor no peito,dor torácica,Arritmia
+desconforto no peito,desconforto torácico,Arritmia
+falta de ar,dificuldade para respirar,Arritmia

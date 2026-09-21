@@ -2,15 +2,15 @@
 
 ## Status geral
 
-O projeto atual ainda está alinhado com a Fase 1 e precisa de artefatos específicos para atender ao enunciado da Fase 2.
+A Parte 1 está concluída e aprovada. A Parte 2, a documentação geral e os entregáveis de publicação permanecem em andamento.
 
 ## Parte 1 — Frases de sintomas + extração de informações
 
-- [ ] Criar arquivo TXT com 10 frases completas de sintomas relatados por pacientes
-- [ ] Definir mapeamento de sintomas para doenças em CSV
-- [ ] Implementar leitura do TXT e extração de sintomas por palavras-chave
-- [ ] Sugerir diagnóstico com base no mapa de conhecimento
-- [ ] Validar saídas em exemplos variados
+- [x] Criar arquivo TXT com 10 frases completas de sintomas relatados por pacientes
+- [x] Definir mapeamento de sintomas para doenças em CSV
+- [x] Implementar leitura do TXT e extração de sintomas por palavras-chave
+- [x] Sugerir diagnóstico com base no mapa de conhecimento
+- [x] Validar saídas em exemplos variados
 
 ## Parte 2 — Classificador básico de texto
 
@@ -49,7 +49,7 @@ O projeto atual ainda está alinhado com a Fase 1 e precisa de artefatos especí
 
 ## Prioridade de execução
 
-1. Concluir Parte 1
+1. Parte 1 concluída: manter os empates e as limitações aprovados
 2. Concluir Parte 2
 3. Criar README e documentação
 4. Avançar para os “Ir Além”

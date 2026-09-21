@@ -1,6 +1,6 @@
 # CardioIA - Fase 2
 
-Este diretório reúne os primeiros artefatos iniciados para atender ao enunciado da Fase 2 do projeto CardioIA.
+Este diretório reúne os artefatos desenvolvidos para atender ao enunciado da Fase 2 do projeto CardioIA.
 
 ## Estrutura
 
@@ -9,13 +9,13 @@ Este diretório reúne os primeiros artefatos iniciados para atender ao enunciad
 
 ## Status atual
 
-- Parte 1 em desenvolvimento
+- Parte 1 concluída e aprovada: 10 relatos com correspondências, 13 testes aprovados e empates explícitos nos relatos 1, 3 e 9
 - Parte 2 em desenvolvimento
-- Documentação e vídeo ainda pendentes
+- Documentação da Parte 1 concluída; documentação geral, publicação e vídeo ainda pendentes
 
 ## Próximos passos
 
-1. Completar a lógica de extração de sintomas
+1. Revisar o dataset da Parte 2 e criar o notebook exigido
 2. Treinar e validar o classificador com métricas
 3. Documentar a execução em README
 4. Expandir para os itens do “Ir Além”
