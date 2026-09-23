@@ -2,7 +2,7 @@
 
 ## Estrutura e finalidade
 
-O `mapa_sintomas_doencas.csv` é uma seleção didática de associações, conforme a Parte 1 do [enunciado](../../Enunciado.md). Não é uma ontologia clínica completa nem um instrumento validado de diagnóstico.
+O `mapa_sintomas_doencas.csv` é uma seleção didática de associações, conforme a Parte 1 do [enunciado](../Enunciado.md). Não é uma ontologia clínica completa nem um instrumento validado de diagnóstico.
 
 São mantidas as colunas `Sintoma 1`, `Sintoma 2` e `Doença Associada`. As duas primeiras contêm formas alternativas de expressar um sintoma; não exigem ocorrência conjunta. O nome da terceira coluna segue o enunciado; Angina é uma manifestação clínica, e Arritmia é uma categoria ampla.
 
@@ -47,7 +47,7 @@ Exemplos de agrupamento: “palpitações” e “coração dispara” não gera
 
 Há tratamento limitado de negações locais. “Não tenho falta de ar” é diferente de “não consigo dormir deitado”, que afirma uma dificuldade. Construções complexas permanecem uma limitação, conforme o README.
 
-Essas regras são decisões computacionais do projeto, não recomendações das fontes médicas. O capítulo 10 fundamenta normalização, regras e representação do conhecimento; consulte o [mapeamento didático](../../docs/MAPEAMENTO_APOSTILAS_FASE2.md).
+Essas regras são decisões computacionais do projeto, não recomendações das fontes médicas. O capítulo 10 fundamenta normalização, regras e representação do conhecimento; consulte o [mapeamento didático](../docs/MAPEAMENTO_APOSTILAS_FASE2.md).
 
 ## Referências
 

@@ -19,20 +19,20 @@ Criar um mapa simples de sintomas e doenças para sugerir diagnósticos básicos
 ## Execução
 
 ```bash
-python fase2/parte1/diagnostico_sintomas.py
+python parte1/diagnostico_sintomas.py
 ```
 
 ## Origem e elaboração dos relatos
 
 Os dez relatos de `sintomas_pacientes.txt` são **dados sintéticos para fins didáticos**. Não foram coletados de pacientes, prontuários ou entrevistas, nem transcritos de publicações médicas.
 
-A versão atual foi adaptada das dez frases que estavam na versão anterior do próprio arquivo `fase2/parte1/sintomas_pacientes.txt`, antes da revisão acompanhada pelo responsável pelo projeto. As reformulações foram propostas com apoio de IA (assistente Codex) e aprovadas pelo responsável pelo projeto nesta sessão de trabalho. Foram preservados os sintomas centrais e acrescentadas informações fictícias sobre início, duração e impacto na rotina. A redação também foi ajustada para representar a linguagem de um paciente.
+A versão atual foi adaptada das dez frases que estavam na versão anterior do próprio arquivo `parte1/sintomas_pacientes.txt`, antes da revisão acompanhada pelo responsável pelo projeto. As reformulações foram propostas com apoio de IA (assistente Codex) e aprovadas pelo responsável pelo projeto nesta sessão de trabalho. Foram preservados os sintomas centrais e acrescentadas informações fictícias sobre início, duração e impacto na rotina. A redação também foi ajustada para representar a linguagem de um paciente.
 
-O [enunciado da atividade](../../Enunciado.md), na Parte 1, é a referência para o formato: dez frases completas simulando sintomas, com informações sobre quando começaram e como afetam a rotina. Ele também apresenta exemplos de relatos de dor no peito e cansaço. Não há registro de uma fonte externa individual para cada frase original; portanto, não se atribui sua autoria a uma instituição de saúde.
+O [enunciado da atividade](../Enunciado.md), na Parte 1, é a referência para o formato: dez frases completas simulando sintomas, com informações sobre quando começaram e como afetam a rotina. Ele também apresenta exemplos de relatos de dor no peito e cansaço. Não há registro de uma fonte externa individual para cada frase original; portanto, não se atribui sua autoria a uma instituição de saúde.
 
-O capítulo 10 das apostilas, **IA que Entende: Processamento de Linguagem Natural Baseado em Regras**, fundamenta o processamento posterior: normalização, reconhecimento de expressões e associação a um mapa de conhecimento. É uma referência metodológica, não a fonte literal dos relatos. Consulte o [mapeamento das apostilas](../../docs/MAPEAMENTO_APOSTILAS_FASE2.md) para as seções e páginas pertinentes.
+O capítulo 10 das apostilas, **IA que Entende: Processamento de Linguagem Natural Baseado em Regras**, fundamenta o processamento posterior: normalização, reconhecimento de expressões e associação a um mapa de conhecimento. É uma referência metodológica, não a fonte literal dos relatos. Consulte o [mapeamento das apostilas](../docs/MAPEAMENTO_APOSTILAS_FASE2.md) para as seções e páginas pertinentes.
 
-Os textos de saúde reunidos em `docs/` possuem suas próprias referências em [FONTES.md](../../docs/FONTES.md). Essas referências não devem ser apresentadas como origem destes dez relatos, pois eles não foram extraídos desses documentos.
+Os textos de saúde reunidos em `apoio/fase1/docs/` possuem suas próprias referências em [FONTES.md](../apoio/fase1/docs/FONTES.md). Essas referências não devem ser apresentadas como origem destes dez relatos, pois eles não foram extraídos desses documentos.
 
 As situações descritas são simulações para testar a extração de sintomas; não constituem casos clínicos validados. A fundamentação das associações está documentada separadamente em [FONTES_MAPA.md](FONTES_MAPA.md).
 
@@ -59,8 +59,8 @@ A contagem é uma heurística didática, sem pesos clínicos ou probabilidades. 
 Comandos a partir da raiz, usando Python 3.10 ou superior:
 
 ```bash
-python fase2/parte1/diagnostico_sintomas.py
-python -B fase2/parte1/test_diagnostico_sintomas.py
+python parte1/diagnostico_sintomas.py
+python -B parte1/test_diagnostico_sintomas.py
 ```
 
 Os 13 testes passaram na validação da implementação e verificam cobertura dos dez relatos, variantes, acentos, sobreposições, repetições, empates independentes da ordem do mapa, limites de palavra, casos sem correspondência e exemplos de negação.
