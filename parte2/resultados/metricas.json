@@ -1,0 +1,118 @@
+{
+  "n_treino": 41,
+  "n_teste": 19,
+  "acuracia": 0.8947368421052632,
+  "acuracia_baseline": 0.3684210526315789,
+  "classe_baseline": "baixo risco",
+  "relatorio": {
+    "alto risco": {
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.9090909090909091,
+      "support": 12.0
+    },
+    "baixo risco": {
+      "precision": 0.7777777777777778,
+      "recall": 1.0,
+      "f1-score": 0.875,
+      "support": 7.0
+    },
+    "accuracy": 0.8947368421052632,
+    "macro avg": {
+      "precision": 0.8888888888888888,
+      "recall": 0.9166666666666667,
+      "f1-score": 0.8920454545454546,
+      "support": 19.0
+    },
+    "weighted avg": {
+      "precision": 0.9181286549707601,
+      "recall": 0.8947368421052632,
+      "f1-score": 0.8965311004784687,
+      "support": 19.0
+    }
+  },
+  "ordem_classes_matriz": [
+    "alto risco",
+    "baixo risco"
+  ],
+  "matriz_confusao": [
+    [
+      10,
+      2
+    ],
+    [
+      0,
+      7
+    ]
+  ],
+  "ids_treino": [
+    "P03",
+    "P06",
+    "P07",
+    "P08",
+    "P11",
+    "P12",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P19",
+    "P22",
+    "P25",
+    "P26",
+    "P27",
+    "P28",
+    "P29",
+    "P31",
+    "P33",
+    "P34",
+    "P35",
+    "P36",
+    "P37",
+    "P38",
+    "P39",
+    "P42",
+    "P43",
+    "P44",
+    "P45",
+    "P46",
+    "P47",
+    "P48",
+    "P49",
+    "P51",
+    "P53",
+    "P54",
+    "P55",
+    "P56",
+    "P57",
+    "P58",
+    "P59"
+  ],
+  "ids_teste": [
+    "P01",
+    "P02",
+    "P04",
+    "P05",
+    "P09",
+    "P10",
+    "P13",
+    "P14",
+    "P20",
+    "P21",
+    "P23",
+    "P24",
+    "P30",
+    "P32",
+    "P40",
+    "P41",
+    "P50",
+    "P52",
+    "P60"
+  ],
+  "versoes": {
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1"
+  },
+  "python": "3.12.10"
+}

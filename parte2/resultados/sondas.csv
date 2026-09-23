@@ -1,0 +1,7 @@
+id,frase,situacao,conjunto,previsto,acerto
+P05,"Não sinto dor no braço, mas estou com aperto no peito e falta de ar.",alto risco,teste,alto risco,True
+P10,Não tenho dor no peito nem falta de ar e estou me sentindo bem hoje.,baixo risco,teste,baixo risco,True
+P14,"O incômodo no peito é leve, mas começou junto com suor frio e dificuldade para respirar.",alto risco,teste,alto risco,True
+P18,"O braço ficou um pouco dolorido depois de carregar sacolas ontem; hoje está melhor, sem dor no peito nem falta de ar.",baixo risco,treino,baixo risco,True
+P45,"Meu dedo ficou torto depois de uma pancada; a dor é pequena, mas ele está com um formato diferente.",alto risco,treino,alto risco,True
+P59,"A dor leve no punho após a torção está melhorando; sinto os dedos normalmente, sem formigamento, e consigo usar a mão.",baixo risco,treino,baixo risco,True

@@ -1,0 +1,20 @@
+id,grupo_avaliacao,frase,situacao,previsto,acerto
+P01,G01_respiratorio_suor,sinto dor no peito e falta de ar,alto risco,alto risco,True
+P02,G01_respiratorio_suor,"Desde esta manhã, sinto pressão no tórax acompanhada de suor frio.",alto risco,alto risco,True
+P04,G01_respiratorio_suor,Meu coração está disparado e estou com dificuldade para respirar mesmo sentado.,alto risco,alto risco,True
+P05,G01_respiratorio_suor,"Não sinto dor no braço, mas estou com aperto no peito e falta de ar.",alto risco,alto risco,True
+P09,G02_bem_estar,"Hoje me sinto bem, respiro normalmente e realizo minhas atividades habituais.",baixo risco,baixo risco,True
+P10,G02_bem_estar,Não tenho dor no peito nem falta de ar e estou me sentindo bem hoje.,baixo risco,baixo risco,True
+P13,G01_respiratorio_suor,"Não estou com dor no peito, mas meu coração bate irregularmente e estou com muita falta de ar.",alto risco,alto risco,True
+P14,G01_respiratorio_suor,"O incômodo no peito é leve, mas começou junto com suor frio e dificuldade para respirar.",alto risco,alto risco,True
+P20,G02_bem_estar,"Acordei disposto, fiz minhas tarefas e terminei o dia sem nenhum incômodo.",baixo risco,baixo risco,True
+P21,G01_respiratorio_suor,Meu coração parece bater muito devagar e estou com dificuldade para respirar mesmo em repouso.,alto risco,alto risco,True
+P23,G01_respiratorio_suor,"Não estou suando, mas sinto um aperto no peito junto com falta de ar desde que acordei.",alto risco,baixo risco,False
+P24,G01_respiratorio_suor,"Já parei de caminhar, mas o peso no peito continua e estou com suor frio.",alto risco,alto risco,True
+P30,G02_bem_estar,Não sinto palpitações nem tontura; estou bem e fiz minhas atividades habituais sem desconforto.,baixo risco,baixo risco,True
+P32,G01_respiratorio_suor,Acordei durante a noite com o coração batendo fora do ritmo e estou ofegante mesmo depois de me sentar.,alto risco,baixo risco,False
+P40,G02_bem_estar,"Passei o dia bem, sem dor, tontura ou dificuldade para respirar.",baixo risco,baixo risco,True
+P41,G01_respiratorio_suor,"O aperto no peito aliviou por alguns minutos, mas voltou e agora estou com suor frio.",alto risco,alto risco,True
+P50,G02_bem_estar,"Hoje estou bem, sem suor frio ou sensação de desmaio, e consegui cumprir minha rotina sem incômodo.",baixo risco,baixo risco,True
+P52,G01_respiratorio_suor,Meu coração está batendo muito forte e não consigo respirar direito; não tenho dor no peito.,alto risco,alto risco,True
+P60,G02_bem_estar,Não estou sentindo nenhum desconforto hoje; minha respiração está normal e me sinto disposto.,baixo risco,baixo risco,True

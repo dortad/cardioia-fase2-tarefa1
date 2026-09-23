@@ -1,13 +1,61 @@
 frase,situacao
-"sinto dor no peito e falta de ar",alto risco
-"tive um leve incômodo nas costas",baixo risco
-"estou com cansaço extremo e dificuldade para respirar",alto risco
-"tenho uma sensação de aperto no peito ao subir escadas",alto risco
-"sinto apenas desconforto leve depois de caminhar",baixo risco
-"meu coração dispara e eu fico tonto",alto risco
-"não tenho sintomas relevantes hoje e me sinto bem",baixo risco
-"sudorese fria e dor no braço esquerdo",alto risco
-"há um pouco de mal-estar, mas consigo caminhar normalmente",baixo risco
-"falta de ar em repouso e desmaio recorrente",alto risco
-"tenho palpitações ocasionais sem outra queixa",baixo risco
-"dor torácica intensa com ansiedade e suor frio",alto risco
+sinto dor no peito e falta de ar,alto risco
+"Desde esta manhã, sinto pressão no tórax acompanhada de suor frio.",alto risco
+A dor começou no peito e agora também sinto dor no braço esquerdo.,alto risco
+Meu coração está disparado e estou com dificuldade para respirar mesmo sentado.,alto risco
+"Não sinto dor no braço, mas estou com aperto no peito e falta de ar.",alto risco
+Tive um pequeno incômodo na região lombar depois de carregar caixas; hoje está melhor e faço minhas atividades normalmente.,baixo risco
+"Meu punho ficou dolorido após uma pequena torção, mas a dor está diminuindo e consigo movimentá-lo normalmente.",baixo risco
+"Sinto um incômodo discreto na musculatura das costas desde que levantei uma caixa, e ele vem diminuindo ao longo do dia.",baixo risco
+"Hoje me sinto bem, respiro normalmente e realizo minhas atividades habituais.",baixo risco
+Não tenho dor no peito nem falta de ar e estou me sentindo bem hoje.,baixo risco
+Estou com um peso no peito há meia hora e a dor se espalhou para as costas.,alto risco
+"Sinto um aperto no peito, fiquei pálido e parece que vou desmaiar.",alto risco
+"Não estou com dor no peito, mas meu coração bate irregularmente e estou com muita falta de ar.",alto risco
+"O incômodo no peito é leve, mas começou junto com suor frio e dificuldade para respirar.",alto risco
+"Meu coração está disparado, sinto dor no peito e estou quase desmaiando.",alto risco
+"Torci o tornozelo ontem; hoje a dor está menor, o inchaço diminuiu e consigo apoiar o pé.",baixo risco
+"Depois de correr, senti um pequeno incômodo na coxa; ele diminuiu com o descanso e caminho normalmente.",baixo risco
+"O braço ficou um pouco dolorido depois de carregar sacolas ontem; hoje está melhor, sem dor no peito nem falta de ar.",baixo risco
+A dor que senti nas costas depois de mudar os móveis passou; hoje estou bem e voltei à minha rotina.,baixo risco
+"Acordei disposto, fiz minhas tarefas e terminei o dia sem nenhum incômodo.",baixo risco
+Meu coração parece bater muito devagar e estou com dificuldade para respirar mesmo em repouso.,alto risco
+Começou uma pressão no peito enquanto eu descansava e agora sinto a dor chegar ao rosto.,alto risco
+"Não estou suando, mas sinto um aperto no peito junto com falta de ar desde que acordei.",alto risco
+"Já parei de caminhar, mas o peso no peito continua e estou com suor frio.",alto risco
+"Parece que meu coração pula algumas batidas; junto disso, estou com dor no peito e tontura.",alto risco
+Meu polegar ficou um pouco dolorido depois de uma pequena torção; hoje está melhor e consigo mexê-lo sem dificuldade.,baixo risco
+"Senti um incômodo leve na panturrilha depois do treino, mas ele passou com o descanso e hoje estou bem.",baixo risco
+O incômodo leve na lombar depois de carregar uma mala está diminuindo; não tenho formigamento nem fraqueza nas pernas e sigo minha rotina.,baixo risco
+A pequena dor no punho após a torção está quase passando; não há inchaço e consigo usar a mão normalmente.,baixo risco
+Não sinto palpitações nem tontura; estou bem e fiz minhas atividades habituais sem desconforto.,baixo risco
+Sinto uma pressão forte no peito que agora se espalha para o braço direito.,alto risco
+Acordei durante a noite com o coração batendo fora do ritmo e estou ofegante mesmo depois de me sentar.,alto risco
+Estou com dor nas costas e comecei a sentir dormência e fraqueza nas duas pernas.,alto risco
+"Depois que torci o punho, minha mão ficou dormente e o punho parece fora do lugar.",alto risco
+"Virei o pé numa queda e agora ele está frio, com os dedos azulados.",alto risco
+"Após o treino, meu antebraço ficou um pouco dolorido; a dor diminuiu e consigo mexer a mão e o cotovelo normalmente.",baixo risco
+"A coxa ainda está um pouco sensível depois da corrida de ontem, mas hoje incomoda menos e caminho sem dificuldade.",baixo risco
+O tornozelo que torci há alguns dias já não dói nem está inchado; voltei a caminhar normalmente.,baixo risco
+"A pequena dor lombar que tive ao levantar um balde está quase sumindo, sem atrapalhar minhas tarefas.",baixo risco
+"Passei o dia bem, sem dor, tontura ou dificuldade para respirar.",baixo risco
+"O aperto no peito aliviou por alguns minutos, mas voltou e agora estou com suor frio.",alto risco
+"Percebo meu coração batendo devagar e, ao mesmo tempo, sinto dor no peito e uma tontura forte.",alto risco
+"Além da dor nas costas, apareceu uma dificuldade para urinar que eu não tinha antes.",alto risco
+"Torci o tornozelo, o inchaço está aumentando muito e não consigo dar mais que alguns passos.",alto risco
+"Meu dedo ficou torto depois de uma pancada; a dor é pequena, mas ele está com um formato diferente.",alto risco
+Senti uma dorzinha no braço depois de levantar pesos ontem; ela está diminuindo e não sinto falta de ar nem aperto no peito.,baixo risco
+"Meu joelho ficou um pouco dolorido após o exercício, mas hoje está melhor, sem inchaço, e ando normalmente.",baixo risco
+O antebraço que incomodou depois de carregar compras não dói mais; consigo usar o braço normalmente e estou bem.,baixo risco
+"Depois de arrastar uma caixa, fiquei com um incômodo discreto na lombar; ele está melhorando e não tenho dormência nas pernas.",baixo risco
+"Hoje estou bem, sem suor frio ou sensação de desmaio, e consegui cumprir minha rotina sem incômodo.",baixo risco
+"Não sinto dor nos braços, mas estou com pressão no peito, muito pálido e quase desmaiando.",alto risco
+Meu coração está batendo muito forte e não consigo respirar direito; não tenho dor no peito.,alto risco
+"Depois de uma colisão de carro, comecei a sentir dor nas costas, embora ainda consiga caminhar.",alto risco
+"Machucou pouco quando virei o pé, mas desde então não sinto os dedos e eles estão formigando.",alto risco
+"A dor nas costas começou de repente, ficou muito forte e estou me sentindo febril e com calafrios.",alto risco
+"Meu polegar ainda incomoda um pouco desde a torção, mas a dor diminuiu e já consigo segurar objetos normalmente.",baixo risco
+"Depois do exercício, a panturrilha ficou levemente dolorida; hoje ela não dói mais e caminho como de costume.",baixo risco
+Fiquei com um pequeno incômodo no joelho depois de caminhar mais que o habitual; ele vem diminuindo e consigo dobrar a perna normalmente.,baixo risco
+"A dor leve no punho após a torção está melhorando; sinto os dedos normalmente, sem formigamento, e consigo usar a mão.",baixo risco
+Não estou sentindo nenhum desconforto hoje; minha respiração está normal e me sinto disposto.,baixo risco

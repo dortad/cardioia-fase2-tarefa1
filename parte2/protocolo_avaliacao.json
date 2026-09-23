@@ -1,0 +1,53 @@
+{
+  "data": "2026-09-22",
+  "criterio": "Divisão fixada por cenário antes do primeiro ajuste; sem busca de sementes ou hiperparâmetros por acurácia.",
+  "teste_grupos": [
+    "G01_respiratorio_suor",
+    "G02_bem_estar"
+  ],
+  "n_treino": 41,
+  "n_teste": 19,
+  "modelo": {
+    "tfidf_ngram_range": [
+      1,
+      2
+    ],
+    "strip_accents": "unicode",
+    "stop_words": null,
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "familia_para_grupo": {
+    "toracico_respiratorio": "G01_respiratorio_suor",
+    "palpitacao_respiratorio": "G01_respiratorio_suor",
+    "toracico_suor": "G01_respiratorio_suor",
+    "bem_estar": "G02_bem_estar",
+    "toracico_braco": "G03_toracico_irradiacao_tontura",
+    "toracico_irradiacao_costas": "G03_toracico_irradiacao_tontura",
+    "toracico_irradiacao_rosto": "G03_toracico_irradiacao_tontura",
+    "toracico_presincope": "G03_toracico_irradiacao_tontura",
+    "palpitacao_toracico_presincope": "G03_toracico_irradiacao_tontura",
+    "braco_esforco_melhora": "G04_esforco_muscular_melhora",
+    "costas_esforco_melhora": "G04_esforco_muscular_melhora",
+    "coxa_esforco_melhora": "G04_esforco_muscular_melhora",
+    "joelho_esforco_melhora": "G04_esforco_muscular_melhora",
+    "panturrilha_esforco_melhora": "G04_esforco_muscular_melhora",
+    "polegar_torcao_melhora": "G05_lesoes_membros",
+    "punho_torcao_melhora": "G05_lesoes_membros",
+    "tornozelo_torcao_melhora": "G05_lesoes_membros",
+    "dedo_trauma_alerta": "G05_lesoes_membros",
+    "pe_trauma_alerta": "G05_lesoes_membros",
+    "punho_trauma_alerta": "G05_lesoes_membros",
+    "tornozelo_trauma_alerta": "G05_lesoes_membros",
+    "costas_alerta_neurologico": "G06_costas_alerta",
+    "costas_alerta_sistemico": "G06_costas_alerta",
+    "costas_trauma_alerta": "G06_costas_alerta"
+  },
+  "sha256": {
+    "frases_risco.csv": "46acc3ebc7d655666f55166eb8633588e074e417992017b3284a8d8dc84b24f1",
+    "proveniencia_frases.csv": "64160cfc347cc000e90165ea4155eb88cd6af632fdf3ad7d56ba93d38d72872d",
+    "divisao_avaliacao.csv": "1cdefe033a2d9eaf9b5047b7239b9ff702883329d46f62d7344a3e02c8e0463a"
+  }
+}

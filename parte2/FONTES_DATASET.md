@@ -2,7 +2,9 @@
 
 ## Status desta etapa
 
-O responsável pelo projeto aprovou a proposta de 60 frases sintéticas, 30 por classe, e solicitou o registro das fontes. Os critérios e o lote piloto abaixo são propostas para revisão conjunta. As 60 frases ainda não foram produzidas nem aprovadas individualmente; o CSV de treinamento mantém os 12 registros anteriores.
+Base consolidada com 60 frases, 30 por classe. P01–P30 tiveram aprovação individual dos lotes pelo responsável; P31–P60 foram elaboradas e revisadas pelo assistente sob autorização expressa para concluir os lotes sem novas aprovações. Essa distinção consta na proveniência: `data_aprovacao` fica vazia nos registros sem aprovação individual. A autorização e a elaboração dos novos lotes ocorreram em 22/09/2026 e estão registradas em seus documentos.
+
+O CSV de treinamento contém somente `frase,situacao`; o arquivo de proveniência contém os 60 textos correspondentes. A base inicial de 12 registros foi preservada integralmente em [historico/frases_risco_inicial_12.csv](historico/frases_risco_inicial_12.csv). A revisão é didática, não clínica.
 
 ## O que significa “fonte” neste dataset
 
@@ -14,7 +16,7 @@ Há três informações diferentes a registrar:
 
 Nenhuma frase nova será apresentada como fala de paciente real, prontuário ou transcrição de uma fonte médica. As referências não validam os rótulos nem o modelo. A revisão do responsável pelo projeto não equivale a revisão clínica.
 
-## Proveniência dos 12 registros atuais
+## Proveniência dos 12 registros anteriores, arquivados
 
 - Registro 1, “sinto dor no peito e falta de ar”: reproduz o exemplo de alto risco do [Enunciado.md](../Enunciado.md), Parte 2.
 - Registro 2, “tive um leve incômodo nas costas”: reproduz o exemplo de baixo risco do mesmo enunciado.
@@ -22,11 +24,13 @@ Nenhuma frase nova será apresentada como fala de paciente real, prontuário ou 
 
 O fato de uma frase constar no enunciado é sua origem didática, não validação clínica independente.
 
-## Critérios propostos de rotulagem
+## Critérios de rotulagem aprovados
 
 ### Alto risco na simulação
 
 Relatos construídos com sintomas de alerta descritos nas fontes, especialmente desconforto torácico associado a falta de ar, suor frio ou dor no braço; ou percepção de batimentos alterados associada a dificuldade respiratória. A presença ou ausência isolada de uma palavra não define a classe. Referências: R1 e R2.
+
+Na conclusão autorizada dos lotes, o critério de sinais de alerta foi explicitado também para queixas não cardíacas: dor nas costas com manifestações neurológicas, alteração urinária, trauma importante ou início súbito intenso com sintomas sistêmicos (R3); e lesões com deformidade, perda de sensibilidade, mudança de cor/temperatura ou piora importante com limitação funcional (R4). Isso reduz a associação artificial entre região corporal e classe. As fontes distinguem urgência e atendimento imediato; a base didática reúne esses contextos em alto risco, pois o enunciado solicita somente duas classes. Não é uma escala clínica de triagem nem um classificador de probabilidade de doença cardíaca.
 
 ### Baixo risco na simulação
 
@@ -38,9 +42,9 @@ Não considerar “leve”, “consigo caminhar”, ausência de dor no peito ou
 
 Não forçar um rótulo para frases vagas como “estou passando mal” ou “sinto desconforto depois de caminhar”. Reescrever o cenário fictício com informações suficientes ou retirar o exemplo antes de treinar. O CSV final continuará binário, conforme o enunciado; a ambiguidade será tratada durante a curadoria.
 
-## Primeiro lote para revisão — ainda não incorporado ao CSV
+## Primeiro lote aprovado — incorporado ao CSV de treinamento
 
-Os identificadores abaixo são de revisão, não números de linha do futuro dataset.
+Os identificadores abaixo são estáveis na proveniência, não números de linha do futuro dataset. Os textos foram preservados exatamente como documentados no lote submetido à revisão.
 
 | ID | Frase proposta | Rótulo proposto | Origem textual | Referência e justificativa didática |
 |---|---|---|---|---|
@@ -55,9 +59,9 @@ Os identificadores abaixo são de revisão, não números de linha do futuro dat
 | P09 | Hoje me sinto bem, respiro normalmente e realizo minhas atividades habituais. | baixo risco | Nova elaboração sintética com apoio de IA | Critério interno de bem-estar explícito; sem fonte clínica individual atribuída. |
 | P10 | Não tenho dor no peito nem falta de ar e estou me sentindo bem hoje. | baixo risco | Nova elaboração sintética com apoio de IA | Critério interno de bem-estar com sintomas negados; não demonstra ausência de doença. |
 
-## Registro previsto para cada uma das 60 frases
+## Registro de cada uma das 60 frases
 
-O arquivo de treinamento manterá apenas `frase,situacao`. Um arquivo auxiliar de proveniência deverá acompanhar a versão final com os campos:
+O arquivo de treinamento contém apenas `frase,situacao`. O arquivo auxiliar de proveniência acompanha a base com os campos:
 
 - `id`: identificador estável.
 - `frase`: texto exato, permitindo conferir a correspondência com o CSV.
@@ -66,9 +70,10 @@ O arquivo de treinamento manterá apenas `frase,situacao`. Um arquivo auxiliar d
 - `referencias`: identificadores das fontes ou indicação de critério interno.
 - `justificativa_rotulo`: explicação específica, sem alegar validação clínica.
 - `familia_cenario`: grupo de exemplos semelhantes para orientar a separação treino/teste.
-- `status_revisao`: proposto ou aprovado pelo responsável pelo projeto.
+- `status_revisao`: aprovado pelo responsável pelo projeto (P01–P30) ou revisado pelo assistente sob autorização do responsável (P31–P60).
+- `data_aprovacao`: data da aprovação individual; vazia em P31–P60, que tiveram autorização geral de elaboração.
 
-Esse arquivo auxiliar é um entregável planejado para acompanhar as 60 frases; ainda não foi criado. Seus campos não devem ser usados como atributos do classificador, pois alguns revelam diretamente o rótulo.
+O arquivo auxiliar [proveniencia_frases.csv](proveniencia_frases.csv) contém as 60 frases. As famílias são agrupamentos de curadoria, a consolidar antes da divisão treino/teste. Os campos auxiliares não devem ser usados como atributos do classificador, pois alguns revelam diretamente o rótulo.
 
 ## Cuidados para a ampliação e avaliação
 
@@ -83,7 +88,7 @@ Esse arquivo auxiliar é um entregável planejado para acompanhar as 60 frases; 
 
 ## Referências consultadas
 
-Consulta em 20/09/2026. As sínteses abaixo apenas delimitam o uso de cada referência; as frases e classes do projeto não foram retiradas como pares rotulados desses sites.
+Consulta inicial em 20/09/2026; referências R1–R4 reconferidas em 22/09/2026 para concluir os lotes. As sínteses abaixo apenas delimitam o uso de cada referência; as frases e classes do projeto não foram retiradas como pares rotulados desses sites.
 
 - **E1 — FIAP.** [Enunciado da atividade, Parte 2](../Enunciado.md). Solicita uma base simulada binária e fornece dois exemplos de frases com rótulos.
 - **R1 — Ministério da Saúde.** [Infarto](https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/i/infarto), seção “Sintomas”. Descreve dor ou desconforto peitoral, possível irradiação para o braço, suor frio e falta de ar.
@@ -91,6 +96,10 @@ Consulta em 20/09/2026. As sínteses abaixo apenas delimitam o uso de cada refer
 - **R3 — NHS.** [Back pain](https://www.nhs.uk/conditions/back-pain/). Apresenta causas possíveis, evolução e sinais de alerta. Serve como contexto para cenários fictícios de dor lombar em melhora, não como prova de baixo risco individual.
 - **R4 — NHS.** [Sprains and strains](https://www.nhs.uk/conditions/sprains-and-strains/). Apresenta sintomas de lesões musculares e ligamentares e situações que requerem atendimento. Não fornece rótulos binários para o nosso dataset.
 
-## Decisão pendente
+## Lotes e próxima etapa
 
-Revisar e aprovar os critérios e as dez propostas acima antes da elaboração dos demais exemplos e da substituição do CSV.
+- P01–P10: tabela acima, aprovação do responsável.
+- [Lote 2](LOTE_02_REVISAO.md) e [lote 3](LOTE_03_REVISAO.md): aprovação do responsável.
+- [Lote 4](LOTE_04.md), [lote 5](LOTE_05.md) e [lote 6](LOTE_06.md): revisão pelo assistente sob autorização para concluir sem novas aprovações.
+
+A curadoria dos 60 registros está concluída. O [notebook](classificador_risco.ipynb) e a [avaliação por grupos](RESULTADOS.md) foram concluídos. A divisão e seus limites estão em [PROTOCOLO_AVALIACAO.md](PROTOCOLO_AVALIACAO.md). Não solicitar novamente aprovação dos lotes; respeitar a autorização mais recente. Conferências realizadas e limitações em [RELATORIO_CURADORIA.md](RELATORIO_CURADORIA.md).

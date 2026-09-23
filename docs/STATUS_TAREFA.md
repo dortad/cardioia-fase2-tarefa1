@@ -7,15 +7,17 @@ Atualização: 22/09/2026. Síntese de acompanhamento baseada no enunciado local
 | TXT com dez relatos completos | [Relatos](../parte1/sintomas_pacientes.txt) | Concluído e aprovado |
 | CSV de associação entre sintomas e doenças | [Mapa](../parte1/mapa_sintomas_doencas.csv), 30 associações | Concluído e fundamentado |
 | Python lendo relatos, extraindo sintomas e sugerindo diagnósticos | [Extrator](../parte1/diagnostico_sintomas.py) e 13 testes | Concluído; empates e limitações documentados |
-| CSV de frases rotuladas por risco | [CSV atual](../parte2/frases_risco.csv), 12 frases | Curadoria em andamento; ampliação para 60 aprovada |
-| Notebook com TF-IDF, classificação e avaliação | Existe [protótipo em Python](../parte2/classificador_risco.py) | Notebook ainda ausente |
-| Avaliação de acurácia, comportamento e distorções | Métricas no protótipo | Análise final pendente após curadoria |
-| README completo e repositório público | Estrutura e instruções na raiz | Completar resultados e confirmar publicação/visibilidade |
+| CSV de frases rotuladas por risco | [CSV consolidado](../parte2/frases_risco.csv), 60 frases e proveniência | Curadoria concluída; 30 por classe |
+| Notebook com TF-IDF, classificação e avaliação | [Notebook executado](../parte2/classificador_risco.ipynb) | Implementado e executado sem erros |
+| Avaliação de acurácia, comportamento e distorções | [Resultados](../parte2/RESULTADOS.md): 17/19 acertos, dois falsos negativos | Avaliação por grupos e limitações documentadas |
+| README completo e repositório público | Estrutura e instruções na raiz | Resultados documentados; confirmar publicação/visibilidade e incluir vídeo |
 | Vídeo de até quatro minutos, YouTube não listado, link no README | Ainda ausente | Pendente |
 
 ## Próxima etapa acordada
 
-Revisar com o responsável os critérios e as dez propostas de [FONTES_DATASET.md](../parte2/FONTES_DATASET.md). Depois da aprovação, elaborar os demais exemplos por etapas e registrar a origem textual, referências, justificativa do rótulo e família de cenário. Só então atualizar a base e construir o notebook com divisão de treino/teste, TF-IDF ajustado apenas ao treino, classificador e análise de limitações e vieses.
+Os seis lotes estão concluídos: 60 frases com proveniência. P01–P30 têm aprovação individual do responsável; P31–P60 foram concluídas pelo assistente sob autorização para prosseguir sem novas aprovações. A base inicial foi preservada em `parte2/historico/`. Conferências e limitações constam em [RELATORIO_CURADORIA.md](../parte2/RELATORIO_CURADORIA.md).
+
+Notebook e avaliação concluídos. Próxima etapa: preparar a demonstração de até quatro minutos, publicar o vídeo como não listado, incluir o link no README e confirmar a versão final pública no GitHub. Não houve publicação nesta etapa.
 
 A quantidade de 60 frases e o equilíbrio 30/30 são escolhas do projeto; o enunciado não determina esse tamanho nem uma acurácia mínima. A Parte 1 foi encerrada com os empates aceitos; reorganizar arquivos não altera essa decisão.
 
@@ -28,3 +30,6 @@ Os capítulos 02 e 10 fundamentam leitura de arquivos e extração simbólica; o
 O enunciado também apresenta um portal React + Vite e uma classificação visual de ECG com MLP em Keras. Esses itens não foram implementados nesta etapa. O acervo em `apoio/fase1/` pode apoiar trabalhos posteriores, mas não constitui a implementação dessas extensões. Sua execução deverá ser tratada em etapa própria com o responsável.
 
 Validação da reorganização em 22/09/2026: 13 testes da Parte 1 aprovados, extrator executado nos novos caminhos e integridade dos arquivos movidos conferida por SHA256. A execução do protótipo da Parte 2 parou por ausência de scikit-learn no ambiente virtual (ModuleNotFoundError: sklearn). Antes de executá-lo, instalar as dependências com python -m pip install -r requirements.txt na raiz. Não houve alteração dos algoritmos ou datasets nesta etapa.
+
+
+Atualização da implementação em 22/09/2026: dependências instaladas na .venv; o impedimento de scikit-learn relatado na reorganização foi resolvido. Notebook executado do início ao fim em kernel novo e cinco testes de integridade/isolamento aprovados. Divisão congelada antes do ajuste; parâmetros mantidos após observar os erros. Parte 1 preservada.

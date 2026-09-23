@@ -1,3 +1,5 @@
+> **Registro histórico da auditoria de 20/09/2026.** Parte 1 posteriormente concluída e Parte 2 implementada com notebook executado em 22/09/2026. Falhas e pendências descritas abaixo representam aquela auditoria; o estado atual está em [STATUS_TAREFA.md](STATUS_TAREFA.md).
+
 # CardioIA Fase 2: relação entre enunciado, apostilas e implementação
 
 Análise em 20/09/2026. Este documento complementa a auditoria da pasta após a inclusão das 12 apostilas.
