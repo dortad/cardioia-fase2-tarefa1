@@ -37,7 +37,7 @@ O fluxo esperado é relato textual → normalização → identificação de sin
 
 Para evidenciar o aprendizado, recomenda-se apresentar os sintomas encontrados e a associação que motivou a sugestão, explicar como variantes são normalizadas e declarar como ambiguidades são tratadas. Isso é uma recomendação pedagógica; o enunciado não exige um formato específico de explicação.
 
-As falhas já identificadas permanecem: “palpitações” não corresponde a “palpitação”; “pressao” não corresponde a “pressão”; associações duplicadas alteram a contagem; empates dependem da ordem do mapa. A normalização ensinada no capítulo 10 é diretamente pertinente a esses problemas.
+Essas falhas foram resolvidas na implementação final: normalização de caixa e acentos, agrupamento de variantes, eliminação do efeito de associações repetidas e empates independentes da ordem do mapa. Os 13 testes registram esse comportamento.
 
 O CSV solicitado representa um mapa simplificado de conhecimento. A apostila apresenta ontologias formais em RDF/OWL, mas o enunciado admite expressamente CSV ou planilha. Portanto, `rdflib`, OWL, spaCy e NLTK não são obrigatórios. Podem ser usados quando contribuírem para a solução, com justificativa.
 
@@ -45,7 +45,7 @@ O CSV solicitado representa um mapa simplificado de conhecimento. A apostila apr
 
 **Base didática:** capítulo 11, seção 3.3 (pp. 35-37) e seção 4.2 (pp. 45-48).
 
-O código atual usa `TfidfVectorizer`, separação estratificada, ajuste do vocabulário somente no treino, regressão logística e relatório de classificação. Essas escolhas estão alinhadas aos conceitos estudados.
+A implementação final usa `TfidfVectorizer`, separação fixa por grupos de cenários, ajuste do vocabulário somente no treino, regressão logística e relatório de classificação. Essas escolhas estão alinhadas aos conceitos estudados e estão executadas no notebook.
 
 O notebook exigido deve explicar e executar a sequência: carregar e verificar os rótulos → dividir treino/teste → vetorizar → treinar → prever → avaliar → discutir erros. Mostrar uma pequena matriz TF-IDF e seu vocabulário ajuda a demonstrar o conceito, como no código-fonte 13 da apostila, mas não é uma exigência adicional do enunciado.
 
@@ -77,19 +77,19 @@ O README existente prevê CNN para imagens, mas o enunciado desta extensão pede
 
 ## Consequência para a auditoria anterior
 
-As pendências de arquivos, notebook, documentação, vídeo e confirmação do GitHub público continuam. A complementação é pedagógica: além de entregar um programa que roda, demonstrar e explicar os conceitos pertinentes das apostilas.
+As antigas pendências técnicas e documentais foram resolvidas; continuam pendentes o vídeo, seu link no README e a confirmação do GitHub público. A complementação é pedagógica: além de entregar um programa que roda, demonstrar e explicar os conceitos pertinentes das apostilas.
 
-A prioridade continua sendo corrigir e validar a Parte 1, concluir o notebook da Parte 2 com análise dos resultados e finalizar a documentação e o vídeo. Os materiais das demais disciplinas não ampliam automaticamente o escopo exigido pelo enunciado.
+A Parte 1 e o notebook da Parte 2 foram concluídos e validados. Permanecem a produção do vídeo, a inclusão do link e a confirmação da publicação pública. Os materiais das demais disciplinas não ampliam automaticamente o escopo exigido pelo enunciado.
 
 ## Fontes locais
 
 As páginas indicadas correspondem à ordem das páginas dos PDFs.
 
-- [Enunciado da atividade](../Enunciado.md).
-- [Capítulo 02 - RPA na Veia](<../Apostilas/2TIAOA - Fase 2 - Cap02 - RPA na Veia Automatizando Arquivos, Redes e Sistemas com Python_RevFinal.pdf>).
-- [Capítulo 05 - Interfaces Inteligentes](<../Apostilas/2TIAOA - Fase 2 - Cap05 - Interfaces Inteligentes Conectando IA ao Usuário com React e JWT_RevFinal.pdf>).
-- [Capítulo 06 - IA Criativa](<../Apostilas/2TIAOA - Fase 2 - Cap06 - IA Criativa Desvendando o Cérebro das Máquinas que Criam_RevFinal.pdf>).
-- [Capítulo 07 - IA Responsável](<../Apostilas/2TIAOA - Fase 2 - Cap07 - IA Responsável Ética, Sustentabilidade e Regulação na Era dos Dados_RevFinal.pdf>).
-- [Capítulo 10 - IA que Entende](<../Apostilas/2TIAOA - Fase 2 - Cap10 - IA que Entende Processamento de Linguagem Natural Baseado em Regras_RevFinal.pdf>).
-- [Capítulo 11 - NLP no Estilo Clássico](<../Apostilas/2TIAOA - Fase 2 - Cap11 - NLP no Estilo Clássico Estatística, Vetores e Emoções em Texto_RevFinal.pdf>).
-- [Capítulo 12 - Máquinas que Enxergam](<../Apostilas/2TIAOA - Fase 2 - Cap12 - Máquinas que Enxergam Filtragem Inteligente de Imagens com IA_RevFinal.pdf>).
+- [Enunciado da atividade](Enunciado.md).
+- Capítulo 02 - RPA na Veia — PDF local de estudo, não publicado no repositório.
+- Capítulo 05 - Interfaces Inteligentes — PDF local de estudo, não publicado no repositório.
+- Capítulo 06 - IA Criativa — PDF local de estudo, não publicado no repositório.
+- Capítulo 07 - IA Responsável — PDF local de estudo, não publicado no repositório.
+- Capítulo 10 - IA que Entende — PDF local de estudo, não publicado no repositório.
+- Capítulo 11 - NLP no Estilo Clássico — PDF local de estudo, não publicado no repositório.
+- Capítulo 12 - Máquinas que Enxergam — PDF local de estudo, não publicado no repositório.

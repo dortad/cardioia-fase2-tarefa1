@@ -1,5 +1,3 @@
-> **Atualização posterior à curadoria:** o notebook e a avaliação foram concluídos em 22/09/2026. As pendências abaixo registram o momento da curadoria. O script atual já usa a divisão fixa por grupos; veja [protocolo](PROTOCOLO_AVALIACAO.md) e [resultados](RESULTADOS.md).
-
 # Relatório de curadoria — 60 frases
 
 Data: 2026-09-22. Conferência estrutural e revisão didática; não constitui validação clínica nem avaliação de um modelo.
@@ -28,11 +26,11 @@ Há 24 famílias iniciais, mas elas não representam 24 grupos necessariamente i
 | P29 / P59 | 0.480 | sim |
 | P05 / P10 | 0.450 | não |
 
-Antes do notebook, consolidar famílias semelhantes em grupos de avaliação e congelar a divisão sem escolher sementes pelos resultados. Exemplos musculares após esforço, torções semelhantes em diferentes membros e relatos de bem-estar não são independentes apenas porque mudam a redação ou a região corporal. Os cenários torácicos com sintomas sobrepostos também precisam de revisão conjunta. Registrar os IDs efetivamente usados em treino e teste e garantir presença das duas classes nos dois conjuntos.
+As famílias foram consolidadas em seis grupos antes do treinamento, e a divisão foi congelada sem escolher sementes pelos resultados. Exemplos semelhantes permanecem no mesmo conjunto. Os IDs de treino e teste estão registrados em `divisao_avaliacao.csv` e ambos os conjuntos contêm as duas classes.
 
-O script Python existente ainda usa divisão aleatória estratificada por linha. Ele permanece um protótipo e não implementa o controle de grupos descrito aqui; resultados desse script não devem ser apresentados como avaliação final. Não foi treinado nem ajustado um modelo nesta etapa de curadoria.
+O script e o notebook atuais usam a mesma divisão fixa por grupos e o mesmo `Pipeline`. A avaliação final está documentada em [RESULTADOS.md](RESULTADOS.md); qualquer ajuste futuro orientado pelos erros exigirá um novo conjunto independente de teste.
 
-## Vieses e limites a discutir no notebook
+## Vieses e limites discutidos no notebook
 
 - Todos os exemplos são didáticos e majoritariamente produzidos com apoio da mesma IA, com padrões de linguagem semelhantes.
 - Há concentração de bem-estar e melhora na classe baixa e de combinações de sinais de alerta na alta. Não se pode generalizar para queixas ambíguas ou populações reais.
@@ -42,4 +40,4 @@ O script Python existente ainda usa divisão aleatória estratificada por linha.
 - A ausência de duplicatas exatas não elimina semelhança semântica. Pequeno número de famílias pode limitar o tamanho e o equilíbrio de uma divisão por grupos.
 - Quantidade de 60 e equilíbrio 30/30 foram escolhas do projeto; não refletem prevalência e não são requisitos numéricos do enunciado.
 
-Os capítulos 11 e 07 das apostilas fundamentam, respectivamente, a vetorização/classificação e a análise de vieses. O notebook, as métricas finais e a demonstração em vídeo continuam pendentes.
+Os capítulos 11 e 07 das apostilas fundamentam, respectivamente, a vetorização/classificação e a análise de vieses. O notebook e as métricas finais foram concluídos; a demonstração em vídeo permanece pendente.

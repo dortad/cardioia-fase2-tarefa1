@@ -1,68 +1,149 @@
+# FIAP - Faculdade de Informática e Administração Paulista
+
+<p align="center">
+  <a href="https://www.fiap.com.br/">
+    <img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Administração Paulista" width="40%">
+  </a>
+</p>
+
+<br>
+
 # CardioIA — Fase 2: Diagnóstico Automatizado
 
-Entrega do Capítulo 1 — Desafio Integrador: IA entre Robôs, Sinapses e Medicina. Este repositório reúne a extração de sintomas por regras (Parte 1) e a classificação de risco com TF-IDF e aprendizado supervisionado (Parte 2).
+## Grupo AI4Success — Turma 2TIAOR
 
-**Status: entrega em preparação.** A Parte 1 está concluída e aprovada. A Parte 2 tem base de 60 frases, notebook executado e avaliação por grupos concluída. Faltam o vídeo, seu link e a publicação/verificação da versão final no GitHub.
+## 👨‍🎓 Integrantes
 
-## Equipe
+- Durval de Oliveira Dorta Junior — RM 567007
+- Guilherme da Nobrega Gontijo — RM 562211
 
-Grupo AI4Success — turma 2TIAOR.
+## 👩‍🏫 Professores
 
-| Integrante | RM |
-|---|---|
-| Durval de Oliveira Dorta Junior | 567007 |
-| Guilherme da Nobrega Gontijo | 562211 |
+### Tutor
 
-## Organização da entrega
+- Leonardo Ruiz Orabona
 
-| Caminho | Conteúdo |
-|---|---|
-| [parte1/](parte1/README.md) | Dez relatos sintéticos, mapa de sintomas, extrator Python, fontes e testes |
-| [parte2/](parte2/README.md) | CSV com 60 frases, proveniência, notebook executado e avaliação |
-| [docs/STATUS_TAREFA.md](docs/STATUS_TAREFA.md) | Atendimento ao enunciado e pendências |
-| [docs/MAPEAMENTO_APOSTILAS_FASE2.md](docs/MAPEAMENTO_APOSTILAS_FASE2.md) | Relação entre os conteúdos estudados e as atividades |
-| [apoio/fase1/](apoio/fase1/README.md) | Acervo preservado da fase anterior: dados, imagens, textos e documentação |
-| [requirements.txt](requirements.txt) | Dependências da implementação atual da tarefa |
+### Coordenador
 
-O acervo da Fase 1 possui documentação e dependências próprias. A execução das Partes 1 e 2 usa os arquivos presentes nas respectivas pastas, sem depender desse acervo.
+- [Andre Godoi Chiovato](https://www.linkedin.com/in/andregodoi/)
 
-## Preparação e execução
+## 📜 Descrição
 
-Com Python 3.12, execute na raiz do repositório. Se o ambiente virtual já existe e está configurado, basta ativá-lo.
+O CardioIA desta fase simula duas etapas de apoio ao diagnóstico automatizado usando textos clínicos sintéticos. Na [Parte 1](src/parte1/README.md), dez relatos de pacientes são normalizados e comparados com um mapa de conhecimento que relaciona expressões de sintomas a possíveis condições. O programa mostra as evidências encontradas, conta conceitos distintos e preserva associações empatadas, sem apresentar a saída como diagnóstico clínico.
+
+Na [Parte 2](src/parte2/README.md), uma base didática de 60 frases, equilibrada entre alto e baixo risco, é transformada em vetores TF-IDF. Uma regressão logística é treinada e avaliada com grupos de cenários separados entre treino e teste. O notebook executado apresenta métricas, matriz de confusão, análise dos erros e limitações do conjunto sintético.
+
+A solução aplica os conteúdos dos capítulos 02, 07, 10 e 11 das apostilas: leitura de arquivos, processamento simbólico de linguagem, TF-IDF, classificação supervisionada e análise responsável de vieses. Os dados não vieram de pacientes e o sistema não foi validado para triagem ou uso clínico.
+
+**Estado atual:** as duas partes técnicas da atividade principal estão concluídas. Permanecem pendentes o vídeo de até quatro minutos, seu link neste README e a confirmação da visibilidade pública do repositório. Os itens “Ir Além” não fazem parte do escopo desta entrega.
+
+## 🔗 Links rápidos
+
+- [Parte 1 — extração de sintomas](src/parte1/README.md)
+- [Parte 2 — classificador de risco](src/parte2/README.md)
+- [Notebook executado](src/parte2/classificador_risco.ipynb)
+- [Resultados e limitações](src/parte2/RESULTADOS.md)
+- [Documento do projeto no formato FIAP](document/ai_project_document_fiap.md)
+- [Atendimento ao enunciado](document/STATUS_TAREFA.md)
+- [Enunciado da atividade](document/Enunciado.md)
+- [Repositório no GitHub](https://github.com/dortad/cardioia-fase2-tarefa1)
+
+## 📁 Estrutura de pastas
+
+A organização segue o [template de repositório da FIAP](https://github.com/agodoi/templateFiapVfinal):
+
+```text
+.
+├── .github/                  arquivos de apoio à gestão do repositório
+├── assets/                   imagens usadas na documentação
+├── config/                   registro das versões e notas de configuração
+├── document/                 documento do projeto, enunciado, status e complementos
+│   └── other/fase1/          acervo preservado da fase anterior
+├── scripts/                  orientação para scripts auxiliares
+├── src/
+│   ├── parte1/               relatos, mapa, extrator, fontes e testes
+│   └── parte2/               dataset, notebook, modelo, resultados e testes
+├── requirements.txt          dependências para executar a atividade
+└── README.md                 apresentação e instruções da entrega
+```
+
+Os materiais locais de estudo em `Apostilas/`, o ambiente `.venv/` e o registro interno `HISTORICO.md` não fazem parte da entrega publicada. O código atual não depende do acervo preservado em `document/other/fase1/`.
+
+## 🔧 Como executar o código
+
+### Pré-requisitos
+
+- Python 3.12
+- Git, para clonar o repositório
+- PowerShell nos exemplos abaixo; os comandos Python também funcionam em outros terminais
+
+Clone o repositório, entre na pasta e prepare o ambiente:
 
 ```powershell
+git clone https://github.com/dortad/cardioia-fase2-tarefa1.git
+cd cardioia-fase2-tarefa1
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 ```
 
-Parte 1 (usa somente a biblioteca padrão):
+Execute a Parte 1:
 
 ```powershell
-python parte1/diagnostico_sintomas.py
-python -B parte1/test_diagnostico_sintomas.py
+python src/parte1/diagnostico_sintomas.py
+python -B src/parte1/test_diagnostico_sintomas.py
 ```
 
-Parte 2 (notebook e execução equivalente pelo terminal):
+Execute a Parte 2 e suas verificações:
 
 ```powershell
-python parte2/executar_notebook.py
-python parte2/classificador_risco.py
-python -B parte2/test_classificador_risco.py
+python src/parte2/executar_notebook.py
+python src/parte2/classificador_risco.py
+python -B src/parte2/test_classificador_risco.py
 ```
 
-O [notebook executado](parte2/classificador_risco.ipynb) contém TF-IDF, classificação, matriz de confusão, análise de erros e vieses. Na divisão fixa de 41 frases de treino e 19 de teste, o modelo acertou 17 (89,47%), contra 36,84% do baseline. Os dois erros foram altos previstos como baixos. Consulte [resultados e limitações](parte2/RESULTADOS.md). Para abrir interativamente, use `python -m jupyterlab parte2/classificador_risco.ipynb`. As principais versões da execução estão em [requirements-reproducao.txt](requirements-reproducao.txt).
+Para abrir o notebook interativamente:
 
-## Dados, fontes e limitações
+```powershell
+python -m jupyterlab src/parte2/classificador_risco.ipynb
+```
 
-Os relatos são sintéticos e didáticos. A origem textual e a fundamentação das associações estão separadas em [fontes da Parte 1](parte1/FONTES_MAPA.md) e [fontes e propostas da Parte 2](parte2/FONTES_DATASET.md). A documentação da Parte 1 detalha a origem dos relatos e as limitações das regras, incluindo os empates mantidos por decisão do projeto.
+As principais versões usadas na execução registrada estão em [config/requirements-reproducao.txt](config/requirements-reproducao.txt). Esse arquivo não é um lock completo das dependências transitivas.
 
-A Parte 2 contém 60 frases, 30 por classe, com [proveniência individual](parte2/proveniencia_frases.csv). P01–P30 foram aprovadas pelo responsável; P31–P60 foram elaboradas e revisadas pelo assistente sob autorização para concluir sem novas aprovações. A base anterior foi arquivada em `parte2/historico/`. O [relatório de curadoria](parte2/RELATORIO_CURADORIA.md) documenta integridade, semelhanças e limitações. Não há validação clínica e a solução não se destina à triagem real.
+## 📊 Resultados
 
-O enunciado integral e as apostilas são materiais locais de estudo, ignorados pelo Git. Algumas referências internas apontam para esses arquivos e estarão disponíveis apenas na cópia local que os contém. Os requisitos da entrega estão resumidos no documento de status.
+Na Parte 1, os 13 testes automatizados passaram e os dez relatos produziram sugestões explicadas. Os empates dos relatos 1, 3 e 9 são intencionais e estão documentados.
 
-## Vídeo e publicação
+Na Parte 2, o modelo foi treinado com 41 frases e avaliado em 19 frases pertencentes a grupos de cenários retidos:
 
-**Vídeo de demonstração: pendente.** Após concluir a solução, gravar até quatro minutos, publicar no YouTube como não listado e inserir o link nesta seção.
+| Medida | Resultado |
+|---|---:|
+| Acurácia do modelo | 89,47% — 17/19 |
+| Baseline da classe mais frequente | 36,84% — 7/19 |
+| Recall de alto risco | 83,33% — 10/12 |
+| Recall de baixo risco | 100,00% — 7/7 |
 
-Repositório configurado: [cardioia-fase2-tarefa1](https://github.com/dortad/cardioia-fase2-tarefa1). Antes da entrega, confirmar a visibilidade pública e o envio da versão final. A reorganização local não publica alterações automaticamente.
+Os dois erros foram frases de alto risco classificadas como baixo risco. A divisão, os erros e os limites de interpretação estão registrados no [protocolo](src/parte2/PROTOCOLO_AVALIACAO.md) e no [relatório de resultados](src/parte2/RESULTADOS.md). A acurácia descreve somente esta base sintética e não representa desempenho clínico.
+
+## 🗂️ Dados, fontes e limitações
+
+Os relatos e rótulos são didáticos. A [proveniência das 60 frases](src/parte2/proveniencia_frases.csv) diferencia exemplos do enunciado, adaptações e elaborações sintéticas. As fontes institucionais fundamentam os cenários, mas não são autoras das frases ou dos rótulos.
+
+As associações da Parte 1 estão justificadas em [FONTES_MAPA.md](src/parte1/FONTES_MAPA.md), e os critérios da Parte 2 em [FONTES_DATASET.md](src/parte2/FONTES_DATASET.md). O projeto não mede justiça por características demográficas, não usa dados reais de pacientes e não deve ser empregado para decisões médicas.
+
+## 🎥 Vídeo de demonstração
+
+**Pendente.** O enunciado exige um vídeo de até quatro minutos, publicado no YouTube como não listado. Inserir aqui o link real antes da entrega.
+
+## 🗃 Histórico de lançamentos
+
+- **0.2.0 — 22/09/2026**
+  - Parte 1 concluída e validada.
+  - Dataset da Parte 2 consolidado com 60 frases e proveniência.
+  - Notebook executado, métricas e análise de vieses documentadas.
+- **0.1.0 — 20/09/2026**
+  - Estrutura inicial da Fase 2 e protótipo do classificador.
+
+## 📋 Licença e atribuição do template
+
+Este repositório acadêmico segue o [Modelo Git FIAP](https://github.com/agodoi/templateFiapVfinal), disponibilizado pela FIAP sob [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). Fontes, datasets e demais materiais de terceiros permanecem sujeitos às condições de seus respectivos autores.

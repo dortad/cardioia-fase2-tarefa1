@@ -10,18 +10,18 @@ Na raiz do repositório, com o ambiente virtual ativado:
 
 ```powershell
 python -m pip install -r requirements.txt
-python parte2/executar_notebook.py
-python parte2/classificador_risco.py
-python -B parte2/test_classificador_risco.py
+python src/parte2/executar_notebook.py
+python src/parte2/classificador_risco.py
+python -B src/parte2/test_classificador_risco.py
 ```
 
 `executar_notebook.py` usa o Python atual em um kernel temporário, sem depender de configurações globais do Jupyter, executa todas as células e salva as saídas. O script de terminal compartilha o modelo e o protocolo do notebook. Ambos regeneram os arquivos derivados em `resultados/`, preservando os CSVs de entrada. Para visualizar e editar interativamente:
 
 ```powershell
-python -m jupyterlab parte2/classificador_risco.ipynb
+python -m jupyterlab src/parte2/classificador_risco.ipynb
 ```
 
-Selecione o kernel do ambiente virtual. O notebook funciona com o diretório de trabalho na raiz ou em `parte2/`. As principais versões usadas estão em [requirements-reproducao.txt](../requirements-reproducao.txt); este registro não é um lock completo de todas as dependências transitivas.
+Selecione o kernel do ambiente virtual. O notebook funciona com o diretório de trabalho na raiz ou em `src/parte2/`. As principais versões usadas estão em [requirements-reproducao.txt](../../config/requirements-reproducao.txt); este registro não é um lock completo de todas as dependências transitivas.
 
 ## Arquivos e rastreabilidade
 

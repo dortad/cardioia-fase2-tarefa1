@@ -18,7 +18,7 @@ Nenhuma frase nova será apresentada como fala de paciente real, prontuário ou 
 
 ## Proveniência dos 12 registros anteriores, arquivados
 
-- Registro 1, “sinto dor no peito e falta de ar”: reproduz o exemplo de alto risco do [Enunciado.md](../Enunciado.md), Parte 2.
+- Registro 1, “sinto dor no peito e falta de ar”: reproduz o exemplo de alto risco do [Enunciado.md](../../document/Enunciado.md), Parte 2.
 - Registro 2, “tive um leve incômodo nas costas”: reproduz o exemplo de baixo risco do mesmo enunciado.
 - Registros 3 a 12: já estavam em `frases_risco.csv` quando começou esta revisão. Não foi identificada fonte externa individual ou autoria original; não serão atribuídos retroativamente às referências consultadas agora.
 
@@ -90,7 +90,7 @@ O arquivo auxiliar [proveniencia_frases.csv](proveniencia_frases.csv) contém as
 
 Consulta inicial em 20/09/2026; referências R1–R4 reconferidas em 22/09/2026 para concluir os lotes. As sínteses abaixo apenas delimitam o uso de cada referência; as frases e classes do projeto não foram retiradas como pares rotulados desses sites.
 
-- **E1 — FIAP.** [Enunciado da atividade, Parte 2](../Enunciado.md). Solicita uma base simulada binária e fornece dois exemplos de frases com rótulos.
+- **E1 — FIAP.** [Enunciado da atividade, Parte 2](../../document/Enunciado.md). Solicita uma base simulada binária e fornece dois exemplos de frases com rótulos.
 - **R1 — Ministério da Saúde.** [Infarto](https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/i/infarto), seção “Sintomas”. Descreve dor ou desconforto peitoral, possível irradiação para o braço, suor frio e falta de ar.
 - **R2 — NHLBI/NIH.** [Arrhythmias — Symptoms](https://www.nhlbi.nih.gov/health/arrhythmias/symptoms). Descreve palpitações e manifestações associadas; aponta dificuldade respiratória e dor torácica como sintomas graves que requerem avaliação emergencial.
 - **R3 — NHS.** [Back pain](https://www.nhs.uk/conditions/back-pain/). Apresenta causas possíveis, evolução e sinais de alerta. Serve como contexto para cenários fictícios de dor lombar em melhora, não como prova de baixo risco individual.
