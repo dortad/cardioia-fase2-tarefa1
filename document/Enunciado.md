@@ -32,9 +32,8 @@ Como equipe, seu objetivo será desenvolver um módulo inteligente capaz de anal
 No mapa mental a seguir, você poderá ver em que ponto da sua jornada no PBL (Problem Project Learning) sua equipe se encontra. Observe o que está escrito na Fase 2, mas procure também compreender o contexto geral, preparando-se para as próximas fases.
 
 
-> **Observação:** a imagem do mapa mental citada no enunciado original não foi fornecida com os arquivos deste repositório.
-
-Para visualizar o mapa mental completo, acesso o link: mapaMental - CardioIA_ A Nova Era da Cardiologia Inteligente.svg https://fiapcom.sharepoint.com/:u:/s/GestodeContedosOn/Ef4BY4hilsxCnmDoGVc-lF8BhZFskqsxjhdcRGV_ilJ96Q?e=Ev5HoJ
+Para visualizar o mapa mental completo
+![alt text](image.png)
 
 Objetivo geral dessa atividade:
 
@@ -44,7 +43,7 @@ Isso inclui interpretar pequenos textos médicos, identificar sintomas e relacio
 
 Ao final dessa fase, você poderá ter construído algo que muitos profissionais que atuam hoje no mercado da área de saúde adorariam ter em mãos. Durante esse processo, você também será estimulado a refletir sobre a qualidade e a justiça dos dados, dando seus primeiros passos como um desenvolvedor de IA responsável, isto é, se preocupando com o tema “governança em dados”.
 
-> **Observação:** a imagem ilustrativa citada no enunciado original não foi fornecida com os arquivos deste repositório.
+![alt text](image-1.png)
 
 Atividade detalhada:
 
