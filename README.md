@@ -12,6 +12,8 @@
 
 ## Grupo AI4Success — Turma 2TIAOR
 
+[![CI](https://github.com/dortad/cardioia-fase2-tarefa1/actions/workflows/ci.yml/badge.svg)](https://github.com/dortad/cardioia-fase2-tarefa1/actions/workflows/ci.yml)
+
 ## 👨‍🎓 Integrantes
 
 - Durval de Oliveira Dorta Junior — RM 567007
@@ -32,6 +34,8 @@
 O CardioIA desta fase simula duas etapas de apoio ao diagnóstico automatizado usando textos clínicos sintéticos. Na [Parte 1](src/parte1/README.md), dez relatos de pacientes são normalizados e comparados com um mapa de conhecimento que relaciona expressões de sintomas a possíveis condições. O programa mostra as evidências encontradas, conta conceitos distintos e preserva associações empatadas, sem apresentar a saída como diagnóstico clínico.
 
 Na [Parte 2](src/parte2/README.md), uma base didática de 60 frases, equilibrada entre alto e baixo risco, é transformada em vetores TF-IDF. Uma regressão logística é treinada e avaliada com grupos de cenários separados entre treino e teste. O notebook executado apresenta métricas, matriz de confusão, análise dos erros e limitações do conjunto sintético.
+
+A Parte 1 segue uma abordagem **simbólica**: as associações ficam explícitas no mapa e cada sugestão apresenta suas evidências. A Parte 2 segue uma abordagem **estatística**: as associações são aprendidas das frases pelo modelo. A comparação evidencia a auditabilidade das regras e os limites de generalização de uma base textual pequena.
 
 A solução aplica os conteúdos dos capítulos 02, 07, 10 e 11 das apostilas: leitura de arquivos, processamento simbólico de linguagem, TF-IDF, classificação supervisionada e análise responsável de vieses. Os dados não vieram de pacientes e o sistema não foi validado para triagem ou uso clínico.
 
@@ -101,6 +105,14 @@ python src/parte2/executar_notebook.py
 python src/parte2/classificador_risco.py
 python -B src/parte2/test_classificador_risco.py
 ```
+
+Confira a estrutura documental e o notebook executado:
+
+```powershell
+python scripts/validar_entrega.py
+```
+
+Essas verificações e os testes são executados automaticamente pelo [GitHub Actions](.github/workflows/ci.yml) a cada push e pull request.
 
 Para abrir o notebook interativamente:
 

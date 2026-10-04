@@ -31,3 +31,7 @@ venv/
 Apostilas/*
 # Cache local do Jupyter
 .ipynb_checkpoints/
+
+# Copias locais obsoletas anteriores a estrutura FIAP
+docs/
+fase2/
