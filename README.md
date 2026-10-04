@@ -39,7 +39,7 @@ A Parte 1 segue uma abordagem **simbólica**: as associações ficam explícitas
 
 A solução aplica os conteúdos dos capítulos 02, 07, 10 e 11 das apostilas: leitura de arquivos, processamento simbólico de linguagem, TF-IDF, classificação supervisionada e análise responsável de vieses. Os dados não vieram de pacientes e o sistema não foi validado para triagem ou uso clínico.
 
-**Estado atual:** as duas partes técnicas da atividade principal estão concluídas. Permanecem pendentes o vídeo de até quatro minutos, seu link neste README e a confirmação da visibilidade pública do repositório. Os itens “Ir Além” não fazem parte do escopo desta entrega.
+**Estado atual:** as duas partes técnicas da atividade principal e o vídeo de demonstração estão concluídos. Permanece pendente alterar a visibilidade do repositório para pública antes da entrega. Os itens “Ir Além” não fazem parte do escopo desta entrega.
 
 ## 🔗 Links rápidos
 
@@ -145,7 +145,7 @@ As associações da Parte 1 estão justificadas em [FONTES_MAPA.md](src/parte1/F
 
 ## 🎥 Vídeo de demonstração
 
-**Pendente.** O enunciado exige um vídeo de até quatro minutos, publicado no YouTube como não listado. Inserir aqui o link real antes da entrega.
+[Assistir ao vídeo de demonstração no YouTube](https://youtu.be/VMgk0PW0n3A) — duração: 3min54s; publicado como não listado.
 
 ## 🗃 Histórico de lançamentos
 
