@@ -19,7 +19,8 @@ Thumbs.db
 # Artefatos de trabalho - NAO publicar
 *.zip
 *.jpeg
-
+.gitignore
+.gitatributes
 # Credenciais e ambientes locais
 .env
 .agent.md
