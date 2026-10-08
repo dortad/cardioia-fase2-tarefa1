@@ -23,6 +23,7 @@ Thumbs.db
 # Credenciais e ambientes locais
 .env
 .agent.md
+.agent.*
 .env.*
 !.env.example
 .venv/
