@@ -21,6 +21,10 @@ Thumbs.db
 *.jpeg
 .gitignore
 .gitatributes
+
+/.gitignore
+/.gitattributes
+
 # Credenciais e ambientes locais
 .env
 .agent.md
